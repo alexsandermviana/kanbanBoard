@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--FORMULÁRIO DE ENVIO -->
+    <div id="form" class="container-fluid">
+        <div class="row d-flex justify-content-center">
+            <input id="input" type="text" class="form-control col-5">
+            <button onclick="addItemToToDoList()" id="putOnList" class="btn btn-primary">Adicionar à lista</button>
+        </div>
+
+        <div id="board" class="row">
+            <div id="toDo" class="col">
+                <ul id="toDoList" class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-center h1 initialism">To Do<div>
+                       
+                    </li>
+                </ul>
+            </div>
+            <div id="doing" class="col">
+                <ul id="doingList" class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-center h1 initialism">Doing<div>
+
+                </ul>
+            </div>
+            <div id="waiting" class="col">
+                <ul id="waitingList" class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-center h1 initialism">Waiting<div>
+
+                </ul>
+            </div>
+            <div id="done" class="col">
+                <ul id="doneList" class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-center h1 initialism">Done<div>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
